@@ -130,3 +130,7 @@ A full-stack web application for managing projects, assigning tasks, and trackin
    - `JWT_EXPIRE=7d`
    - `NODE_ENV=production`
 5. Railway auto-deploys using `railway.json` config
+
+
+## live link
+https://ethara-assignment-production-0fbd.up.railway.app/
