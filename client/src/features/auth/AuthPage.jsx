@@ -60,7 +60,6 @@ const AuthPage = () => {
       <div className="auth-container">
         <div className="auth-hero">
           <div className="auth-brand">
-            <span className="auth-brand-icon">⚡</span>
             <h1 className="auth-brand-name">TeamFlow</h1>
           </div>
           <p className="auth-tagline">
