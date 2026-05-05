@@ -86,7 +86,10 @@ exports.login = async (req, res) => {
       stack: error.stack,
       name: error.name
     });
-    res.status(500).json({ message: 'Server error during login' });
+    res.status(500).json({ 
+      message: 'Server error during login',
+      error: error.message 
+    });
   }
 };
 
