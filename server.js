@@ -7,6 +7,13 @@ require('dotenv').config();
 
 const connectDB = require('./config/db');
 
+// Check Environment Variables
+console.log('--- Environment Check ---');
+console.log('MONGODB_URI:', process.env.MONGODB_URI ? 'LOADED' : 'MISSING');
+console.log('JWT_SECRET:', process.env.JWT_SECRET ? 'LOADED' : 'MISSING');
+console.log('PORT:', process.env.PORT || 5000);
+console.log('-------------------------');
+
 // Route imports
 const authRoutes = require('./routes/auth');
 const projectRoutes = require('./routes/projects');
