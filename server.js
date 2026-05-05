@@ -9,7 +9,8 @@ const connectDB = require('./config/db');
 
 // Check Environment Variables
 console.log('--- Environment Check ---');
-console.log('MONGODB_URI:', process.env.MONGODB_URI ? 'LOADED' : 'MISSING');
+const mongoUri = process.env.MONGODB_URI || process.env.MONGO_URI;
+console.log('MONGODB_URI/MONGO_URI:', mongoUri ? 'LOADED' : 'MISSING');
 console.log('JWT_SECRET:', process.env.JWT_SECRET ? 'LOADED' : 'MISSING');
 console.log('PORT:', process.env.PORT || 5000);
 console.log('-------------------------');
